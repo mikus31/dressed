@@ -1,205 +1,185 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<title>Dressed | Tees & Gifts</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    .w3-sidebar a {
-        font-family: "Roboto", sans-serif
-    }
-    
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .w3-wide {
-        font-family: "Montserrat", sans-serif;
-    }
-</style>
 
-<body class="w3-content" style="max-width:1200px">
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-        <div class="w3-container w3-display-container w3-padding-16"> <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-            <h3 class="w3-wide"><b>LOGO</b></h3> </div>
-        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> <a href="#" class="w3-bar-item w3-button">Shirts</a> <a href="#" class="w3-bar-item w3-button">Dresses</a> <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
-    </a>
-            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium"> <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a> <a href="#" class="w3-bar-item w3-button">Relaxed</a> <a href="#" class="w3-bar-item w3-button">Bootcut</a> <a href="#" class="w3-bar-item w3-button">Straight</a> </div> <a href="#" class="w3-bar-item w3-button">Jackets</a> <a href="#" class="w3-bar-item w3-button">Gymwear</a> <a href="#" class="w3-bar-item w3-button">Blazers</a> <a href="#" class="w3-bar-item w3-button">Shoes</a> </div> <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a> </nav>
-    <!-- Top menu on small screens -->
-    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-        <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div> <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a> </header>
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:250px">
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
-        <!-- Top header -->
-        <header class="w3-container w3-xlarge">
-            <p class="w3-left">Jeans</p>
-            <p class="w3-right"> <i class="fa fa-shopping-cart w3-margin-right"></i> <i class="fa fa-search"></i> </p>
-        </header>
-        <!-- Image header -->
-        <div class="w3-display-container w3-container"> <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
-            <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-                <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-                <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-                <h1 class="w3-hide-small">COLLECTION 2016</h1>
-                <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
-            </div>
-        </div>
-        <div class="w3-container w3-text-grey" id="jeans">
-            <p>8 items</p>
-        </div>
-        <!-- Product grid -->
-        <div class="w3-row w3-grayscale">
-            <div class="w3-col l3 s6">
-                <div class="w3-container"> <img src="/w3images/jeans1.jpg" style="width:100%">
-                    <p>Ripped Skinny Jeans
-                        <br><b>$24.99</b></p>
-                </div>
-                <div class="w3-container"> <img src="/w3images/jeans2.jpg" style="width:100%">
-                    <p>Mega Ripped Jeans
-                        <br><b>$19.99</b></p>
-                </div>
-            </div>
-            <div class="w3-col l3 s6">
-                <div class="w3-container">
-                    <div class="w3-display-container"> <img src="/w3images/jeans2.jpg" style="width:100%"> <span class="w3-tag w3-display-topleft">New</span>
-                        <div class="w3-display-middle w3-display-hover">
-                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-                        </div>
-                    </div>
-                    <p>Mega Ripped Jeans
-                        <br><b>$19.99</b></p>
-                </div>
-                <div class="w3-container"> <img src="/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans
-                        <br><b>$20.50</b></p>
-                </div>
-            </div>
-            <div class="w3-col l3 s6">
-                <div class="w3-container"> <img src="/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans
-                        <br><b>$20.50</b></p>
-                </div>
-                <div class="w3-container">
-                    <div class="w3-display-container"> <img src="/w3images/jeans4.jpg" style="width:100%"> <span class="w3-tag w3-display-topleft">Sale</span>
-                        <div class="w3-display-middle w3-display-hover">
-                            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-                        </div>
-                    </div>
-                    <p>Vintage Skinny Jeans
-                        <br><b class="w3-text-red">$14.99</b></p>
-                </div>
-            </div>
-            <div class="w3-col l3 s6">
-                <div class="w3-container"> <img src="/w3images/jeans4.jpg" style="width:100%">
-                    <p>Vintage Skinny Jeans
-                        <br><b>$14.99</b></p>
-                </div>
-                <div class="w3-container"> <img src="/w3images/jeans1.jpg" style="width:100%">
-                    <p>Ripped Skinny Jeans
-                        <br><b>$24.99</b></p>
-                </div>
-            </div>
-        </div>
-        <!-- Subscribe section -->
-        <div class="w3-container w3-black w3-padding-32">
-            <h1>Subscribe</h1>
-            <p>To get special offers and VIP treatment:</p>
-            <p>
-                <input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"> </p>
-            <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-        </div>
-        <!-- Footer -->
-        <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-            <div class="w3-row-padding">
-                <div class="w3-col s4">
-                    <h4>Contact</h4>
-                    <p>Questions? Go ahead.</p>
-                    <form action="/action_page.php" target="_blank">
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required> </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required> </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required> </p>
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required> </p>
-                        <button type="submit" class="w3-button w3-block w3-black">Send</button>
-                    </form>
-                </div>
-                <div class="w3-col s4">
-                    <h4>About</h4>
-                    <p><a href="#">About us</a></p>
-                    <p><a href="#">We're hiring</a></p>
-                    <p><a href="#">Support</a></p>
-                    <p><a href="#">Find store</a></p>
-                    <p><a href="#">Shipment</a></p>
-                    <p><a href="#">Payment</a></p>
-                    <p><a href="#">Gift card</a></p>
-                    <p><a href="#">Return</a></p>
-                    <p><a href="#">Help</a></p>
-                </div>
-                <div class="w3-col s4 w3-justify">
-                    <h4>Store</h4>
-                    <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-                    <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-                    <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-                    <h4>We accept</h4>
-                    <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-                    <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-                    <br> <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i> <i class="fa fa-instagram w3-hover-opacity w3-large"></i> <i class="fa fa-snapchat w3-hover-opacity w3-large"></i> <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i> <i class="fa fa-twitter w3-hover-opacity w3-large"></i> <i class="fa fa-linkedin w3-hover-opacity w3-large"></i> </div>
-            </div>
-        </footer>
-        <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-        <!-- End page content -->
-    </div>
-    <!-- Newsletter Modal -->
-    <div id="newsletter" class="w3-modal">
-        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-            <div class="w3-container w3-white w3-center"> <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-                <h2 class="w3-wide">NEWSLETTER</h2>
-                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-                <p>
-                    <input class="w3-input w3-border" type="text" placeholder="Enter e-mail"> </p>
-                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-            </div>
-        </div>
-    </div>
-    <script>
-        // Accordion 
-        function myAccFunc() {
-            var x = document.getElementById("demoAcc");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            }
-            else {
-                x.className = x.className.replace(" w3-show", "");
-            }
+<head>
+    <meta charset="utf-8">
+    <title>Dressed | Tees & Gifts</title>
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Cedarville+Cursive|Lobster" rel="stylesheet">
+    <style>
+        body {
+            background: white;
         }
-        // Click on the "Jeans" link on page load to open the accordion for demo purposes
-        document.getElementById("myBtn").click();
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
+        
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #7391AE;
+            padding: 10px 5px;
         }
+        
+        #social {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        
+        h1 {
+            font-family: 'Slabo 27px', serif;
+            width: 72%;
+            margin: 0 auto;
+            color: whitesmoke;
+            top: 20px;
+            left: 145px;
+            position: absolute;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            font-family: 'Slabo 27px', serif;
+            font-size: 1.1em;
+            width: 72%;
+            margin: 0 auto;
+            color: whitesmoke;
+            top: 70px;
+            left: 145px;
+            position: absolute;
+        }
+        
+        h3 {
+            color: #278B8B;
+            font-family: 'Slabo 27px', serif;
+        }
+        
+        h4 {
+            color: #F9D75C;
+            font-size: 1.3em;
+        }
+        
+        p {
+            font-family: 'Slabo 27px', serif;
+            font-size: .9em;
+            color: #375671;
+        }
+        
+        ul {
+            font-family: 'Slabo 27px', serif;
+            list-style-type: none;
+            font-size: .9em;
+            color: #375671;
+            line-height: 1.6em;
+        }
+        
+        a,
+        a:visited {
+            color: #2C3595;
+        }
+        
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            border: 2px solid #dddddd;
+        }
+    </style>
+</head>
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-    </script>
+<body>
+    <header>
+        <div id="social">
+            <a href="mailto: rmichael.mcneil@gmail.com" target="_blank"><img src="images/gmail.png"></a> &nbsp;
+            <a href="https://www.linkedin.com/in/michael-mcneil-8279ba51/" target="_blank"><img src="images/linkedin.png"></a> &nbsp;
+            <a href="https://twitter.com/manandplace" target="_blank"><img src="images/twitter.png"></a> &nbsp;
+            <a href="https://www.instagram.com/mikus31/" target="_blank"><img src="images/instagram.png"></a> &nbsp;
+            <a href="http://www.manandplace.com" target="_blank"><img src="images/man-and-place.png"></a> &nbsp; </div>
+        <h1>Michael McNeil</h1>
+        <h2>Digital Mapping Gallery</h2> </header>
+    <section class="project"> <img src="images/Ultimate-Field-Map.png" alt="Ultimate Field Map" class="project-image">
+        <h3><a target = '_blank' href="https://mikus31.github.io/ultimate-field-map/">Ultimate Field Map</a></h3>
+        <p>Dynamic, interactive ultimate frisbee field map made for event organizers, teams, fans, and media outlets.</p>
+        <p>The map was created using QGIS and Leaflet.</p>
+        <ul>
+            <li>See the map: <a href="https://mikus31.github.io/ultimate-field-map/" target="_blank">Ultimate Field Map</a></li>
+            <li>Data source: <a href="http://www.usaultimate.org/index.html" target="_blank">USA Ultimate</a></li>
+        </ul>
+    </section>
+    <section class="project"> <img src="images/Book-Deserts.png" alt="Book Deserts in St. Tammany Parish" class="project-image">
+        <h3><a target = '_blank' href="maps/book-deserts.pdf">Book Deserts In St. Tammany Parish</a></h3>
+        <p>This quantitative thematic map of St. Tammany Parish in southeast Louisiana plots libraries per 5,000 people in an effort to identify potential "book deserts" in the region.</p>
+        <p>The map was created using QGIS.</p>
+        <ul>
+            <li>See the map: <a href="maps/book-deserts.pdf" target="_blank">Book Deserts In St. Tammany Parish</a></li>
+            <li>Data source: <a href="http://www.census.gov/data.html" target="_blank">United States Census Bureau</a></li>
+        </ul>
+    </section>
+    <section class="project"> <img src="images/Bachelors-Or-Better.png" alt="Bachelor's Or Better" class="project-image">
+        <h3><a target = '_blank' href="https://mikus31.carto.com/builder/05198188-4176-11e7-bd2e-0e05a8b3e3d7/embed">The Undereducated States Of America</a></h3>
+        <p>As of 2015, less than a third of American adults hold a Bachelor's Degree or better from colleges and universities. This map explores that data nationwide.</p>
+        <p>The map was created using Carto.</p>
+        <ul>
+            <li>See the map: <a href="https://mikus31.carto.com/builder/05198188-4176-11e7-bd2e-0e05a8b3e3d7/embed" target="_blank">The Undereducated States Of America</a></li>
+            <li>Data source: <a href="https://www.data.gov/" target="_blank">Data.gov</a></li>
+        </ul>
+    </section>
+    <section class="project"> <img src="images/Cancer-Mortality-Map.png" alt="Cancer Mortality Rates in the USA" class="project-image">
+        <h3><a target = '_blank' href="https://mikus31.carto.com/viz/3fb70546-6ebc-11e6-8730-0e05a8b3e3d7/map">Cancer Mortality Rates In The USA</a></h3>
+        <p>This quantitative thematic map of America displays cancer mortality rates by county for all races, genders, and ages.</p>
+        <p>The map was created using QGIS and Carto.</p>
+        <ul>
+            <li>See the map: <a href="https://mikus31.carto.com/viz/3fb70546-6ebc-11e6-8730-0e05a8b3e3d7/map" target="_blank">Cancer Mortality Rates In The USA</a></li>
+            <li>Data source: <a href="https://www.cancer.gov/" target="_blank">National Cancer Institute</a></li>
+        </ul>
+    </section>
+    <section class="project"> <img src="images/Headshot.png" alt="Me!" class="project-image">
+        <h3><a target = '_blank' href="https://www.linkedin.com/in/michael-mcneil-8279ba51/">Contact Michael</a></h3>
+        <p>Thanks for visiting! This page was created using <a target='_blank' href="https://github.com/">GitHub</a>.</p>
+        <p>To connect, visit any of the links below.</p>
+        <ul>
+            <li>
+                <a href="mailto: rmichael.mcneil@gmail.com" target="_blank"><img src="images/gmail.png"></a> &nbsp;
+                <a href="https://www.linkedin.com/in/michael-mcneil-8279ba51/" target="_blank"><img src="images/linkedin.png"></a> &nbsp;
+                <a href="https://twitter.com/manandplace" target="_blank"><img src="images/twitter.png"></a> &nbsp;
+                <a href="https://www.instagram.com/mikus31/" target="_blank"><img src="images/instagram.png"></a> &nbsp;
+                <a href="http://www.manandplace.com" target="_blank"><img src="images/man-and-place.png"></a> &nbsp; </li>
+        </ul>
+    </section>
+    <!--<section class="project"> <img src="images/Electric-Power-Gen-Map.png" alt="USA Electric Power Generation" class="project-image">
+    <h3><a target = '_blank' href="https://mikus31.github.io/map672-power-gen/">USA Electric Power Generation</a></h3>
+    <p>This proportional symbol map shows power generation for hydro, nuclear, and solar power plants in America.</p>
+    <p>The map was created with custom JavaScript code using Brackets.</p>
+    <ul>
+        <li>See the map: <a href="https://mikus31.github.io/map672-power-gen/" target="_blank">USA Electric Power Generation</a></li>
+        <li>Data source: <a href="http://www.eia.gov/electricity/data/eia923/" target="_blank">USA Energy Information Administration</a></li>
+    </ul>
+</section>-->
+    <!--<section class="project"> <img src="images/Hydro-Power.png" alt="USA Hydro Power Generation" class="project-image">
+        <h3><a target = '_blank' href="https://mikus31.github.io/prop-symbol-hydro/">USA Hydro Power Generation</a></h3>
+        <p>This proportional symbol map shows hydro power generation in America.</p>
+        <p>The map was created with custom JavaScript code using Brackets.</p>
+        <ul>
+            <li>See the map: <a href="https://mikus31.github.io/prop-symbol-hydro/" target="_blank">USA Hydro Power Generation</a></li>
+            <li>Data source: <a href="http://www.eia.gov/electricity/data/eia923/" target="_blank">USA Energy Information Administration</a></li>
+        </ul>
+    </section>-->
 </body>
 
 </html>
