@@ -14,11 +14,20 @@
             background: white;
         }
         
-        header {
+        #header {
             width: 100%;
             background: #24476A;
-            width: 100%;
             height: 85px;
+        }
+        
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 40px;
+            background: #24476A;
+            width: 100%;
         }
         
         #social {
@@ -38,6 +47,17 @@
             font-size: 3.5em;
         }
         
+        h2 {
+            font-family: 'Lobster', cursive;
+            width: 70%;
+            margin: 0 auto;
+            color: whitesmoke;
+            bottom: 1px;
+            left: 15px;
+            position: absolute;
+            font-size: 1.8em;
+        }
+        
         a {
             color: #24476A;
         }
@@ -49,13 +69,15 @@
 </head>
 
 <body>
-    <header>
+    <div id="header">
         <div id="social">
             <a href="mailto: rmichael.mcneil@gmail.com" target="_blank"><img src="images/gmail.png"></a> &nbsp;
             <a href="https://twitter.com/manandplace" target="_blank"><img src="images/twitter.png"></a> &nbsp;
             <a href="https://facebook.com/manandplace" target="_blank"><img src="images/facebook.png"></a> &nbsp;
             <a href="https://www.instagram.com/mikus31/" target="_blank"><img src="images/instagram.png"></a> &nbsp; </div>
-        <h1>Dressed</h1> </header>
+        <h1>Dressed</h1> </div>
+    <div id="footer">
+        <h2>Dressed</h2></div>
 </body>
 
 </html>
