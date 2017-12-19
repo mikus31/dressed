@@ -1,2 +1,2 @@
-# dressed
-Dressed Tees &amp; Gifts
+# Dressed
+Dressed | Tees &amp; Gifts
